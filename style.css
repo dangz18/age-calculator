@@ -14,6 +14,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Poppins-Bold-Italic";
+  src: url("assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -88,12 +96,15 @@ form {
   margin-top: 10px;
 }
 
-.line {
+#line1 {
   display: inline-block;
   width: 550px;
   margin-left: 40px;
-
   border-bottom: 1px solid hsl(0, 1%, 44%);
+}
+
+#line2 {
+  visibility: hidden;
 }
 
 #arrow {
@@ -126,11 +137,58 @@ form {
 
 .row h1 {
   font-size: 60px;
-  font-family: "Poppins-Bold";
+  font-family: "Poppins-Bold-Italic";
 }
 
 #age-years,
 #age-months,
 #age-days {
   color: hsl(259, 100%, 65%);
+}
+
+/*---------------------------------------Mobile design-----------------------------------------*/
+@media only screen and (max-width: 768px) {
+  #box {
+    height: 500px;
+    width: 80%;
+  }
+
+  form {
+    margin-top: 30px;
+    margin-left: 0px;
+    justify-content: center;
+  }
+
+  #space {
+    width: 10px;
+  }
+
+  #day-field,
+  #month-field,
+  #year-field {
+    width: 90px;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .delimitator {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  #line1,
+  #line2 {
+    width: 30%;
+    margin-left: 0px;
+    visibility: visible;
+    border-bottom: 1px solid hsl(0, 1%, 44%);
+  }
+
+  .age-container {
+    width: 100%;
+  }
 }
