@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  height: 500px;
+  width: 750px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px 20px 150px 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  color: hsl(0, 1%, 44%);
+  font-family: "Poppins-Bold";
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+#space {
+  width: 20px;
+}
+
+#day-field,
+#month-field,
+#year-field {
+  width: 130px;
+  height: 50px;
+  font-family: "Poppins-Bold";
+  font-size: 30px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#day-error,
+#month-error,
+#year-error {
+  color: hsl(0, 100%, 67%);
+  font-family: "Poppins-Italic";
+  font-size: 12px;
+  display: none;
+}
+
+.delimitator {
+  margin-top: 10px;
+}
+
+.line {
+  display: inline-block;
+  width: 550px;
+  margin-left: 40px;
+
+  border-bottom: 1px solid hsl(0, 1%, 44%);
+}
+
+#arrow {
+  color: white;
+  font-size: 30px;
+}
+
+#arrow-btn {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 100px;
+}
+
+#arrow:hover {
+  color: black;
+}
+
+.age-container {
+  margin-left: 40px;
+  width: 750px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row h1 {
+  font-size: 60px;
+  font-family: "Poppins-Bold";
+}
+
+#age-years,
+#age-months,
+#age-days {
+  color: hsl(259, 100%, 65%);
+}

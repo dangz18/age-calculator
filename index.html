@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div id="box">
+      <form>
+        <div class="input-field">
+          <label for="day" id="day">DAY</label>
+          <input name="day" type="number" placeholder="DD" id="day-field" />
+          <p id="day-error">Must be a valid day</p>
+        </div>
+        <div id="space"></div>
+        <div class="input-field">
+          <label for="month" id="month">MONTH</label>
+          <input name="month" type="number" placeholder="MM" id="month-field" />
+          <p id="month-error">Must be a valid month</p>
+        </div>
+        <div id="space"></div>
+        <div class="input-field">
+          <label for="year" id="year">YEAR</label>
+          <input name="year" type="number" placeholder="YYYY" id="year-field" />
+          <p id="year-error">Must be in the past</p>
+        </div>
+      </form>
+
+      <div class="delimitator">
+        <div class="line"></div>
+        <button id="arrow-btn">
+          <i class="fa fa-arrow-down" id="arrow"></i>
+        </button>
+      </div>
+
+      <div class="age-container">
+        <div class="row">
+          <h1 id="age-years">--</h1>
+          <h1>&nbsp;&nbsp;years</h1>
+        </div>
+        <div class="row">
+          <h1 id="age-months">--</h1>
+          <h1>&nbsp;&nbsp;months</h1>
+        </div>
+        <div class="row">
+          <h1 id="age-days">--</h1>
+          <h1>&nbsp;&nbsp;days</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
